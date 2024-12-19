@@ -1,0 +1,21 @@
+from astropy.io import fits
+import matplotlib.pyplot as plt
+import numpy as np
+import os
+import matplotlib.patches as patches
+from datetime import datetime, timedelta
+import matplotlib.dates as mdates
+from scipy.signal import find_peaks
+from scipy.ndimage import gaussian_filter
+file_path = "AIA Data"
+file_names = [
+    "aia_l2_20140910_112825_3860259453_94.fits",
+    "aia_l2_20140910_112825_3860259453_131.fits",
+    "aia_l2_20140910_112825_3860259453_171.fits",
+    "aia_l2_20140910_112825_3860259453_193.fits",
+    "aia_l2_20140910_112825_3860259453_211.fits",
+    "aia_l2_20140910_112825_3860259453_304.fits",
+    "aia_l2_20140910_112825_3860259453_335.fits",
+    "aia_l2_20140910_112825_3860259453_1600.fits",
+    "aia_l2_20140910_112825_3860259453_1700.fits"
+]
